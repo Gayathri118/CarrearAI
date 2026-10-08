@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareerAI - Smart Career Guidance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">Career<span>AI</span></div>
+  <div class="tag">Smart Career Guidance & Job Matching</div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">AI-POWERED CAREER ASSISTANT</p>
+    <h1>Find the career path that matches your skills.</h1>
+    <p class="sub">Enter your skills, interests and preferred location. CareerAI gives you role recommendations and identifies the skills you can learn next.</p>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Tell us about you</h2>
+  <label>Skills <span>comma separated</span></label>
+  <input id="skills" placeholder="Python, SQL, HTML, CSS">
+
+  <label>Interests <span>comma separated</span></label>
+  <input id="interests" placeholder="Web development, Data">
+
+  <label>Preferred location</label>
+  <select id="location">
+    <option value="">Select location</option>
+    <option>Chennai</option>
+    <option>Bangalore</option>
+    <option>Remote</option>
+  </select>
+
+  <button onclick="recommend()">Get Career Recommendations</button>
+  <p id="status"></p>
+</section>
+
+<section id="results" class="results"></section>
+</main>
+
+<footer>CareerAI • SDG 8: Decent Work and Economic Growth</footer>
+<script src="script.js"></script>
+</body>
+</html>
